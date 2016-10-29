@@ -16,9 +16,6 @@ import java.util.Map;
 
 import javax.net.ssl.HttpsURLConnection;
 
-/**
- * Created by Nairen on 29/7/2016.
- */
 public class CallAPI extends AsyncTask<String, String, String> {
     String url;
     HashMap<String,String> hm;
