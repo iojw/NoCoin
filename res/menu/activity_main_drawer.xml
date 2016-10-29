@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/home"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="Home" />
+        <item
+            android:id="@+id/stats"
+            android:icon="@drawable/ic_insert_chart_black_24dp"
+            android:title="Statistics" />
+        <item
+            android:id="@+id/accs"
+            android:icon="@drawable/ic_group_black_24dp"
+            android:title="Linked Accounts" />
+        <item
+            android:id="@+id/settings"
+            android:icon="@drawable/ic_settings_applications_black_24dp"
+            android:title="Settings" />
+    </group>
+
+
+</menu>

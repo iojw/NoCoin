@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="ultron.cashless.Receive"
+    android:columnCount="22"
+    android:rowCount="28"
+    android:background="@color/colorBackground">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Medium Text"
+        android:id="@+id/results"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/startListening"
+        android:layout_toEndOf="@+id/startListening"
+        android:textColor="#ffffff" />
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="196dp"
+        android:layout_height="196dp"
+        android:id="@+id/progressBar"
+        android:background="#00ffffff"
+        android:indeterminate="false"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SUBMIT"
+        android:id="@+id/submit"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textSize="20dp"
+        android:layout_alignBottom="@+id/amount"
+        android:layout_marginBottom="8dp"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="#FFFFFF" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/amount"
+        android:textSize="30dp"
+        android:maxLength="6"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/dollar"
+        android:layout_toLeftOf="@+id/submit"
+        android:layout_toStartOf="@+id/submit"
+        android:layout_marginLeft="16dp" />
+
+    <ImageView
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:id="@+id/startListening"
+        android:src="@drawable/ic_mic_24dp"
+        android:scaleType="fitXY"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="$"
+        android:id="@+id/dollar"
+        android:textSize="30dp"
+        android:layout_alignBottom="@+id/amount"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="12dp" />
+
+    <ImageView
+        android:layout_width="196dp"
+        android:layout_height="196dp"
+        android:id="@+id/checkmark"
+        android:layout_alignBottom="@+id/progressBar"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/ic_check_24dp" />
+
+    <ImageView
+        android:layout_width="196dp"
+        android:layout_height="196dp"
+        android:id="@+id/cross"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/ic_close_24dp"
+        android:layout_alignParentEnd="false" />
+
+</RelativeLayout>
